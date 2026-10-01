@@ -34,15 +34,29 @@
             text-align: center;
         }
         h1 {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             font-size: 2.5rem;
             color: var(--text-color);
         }
         .title {
             color: var(--accent-color);
             font-size: 1.2rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 600;
+        }
+        .contact-info {
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
         }
         .bio {
             color: var(--text-muted);
@@ -100,30 +114,26 @@
     <div class="container">
         <h1>Lital Cohen</h1>
         <div class="title">Data Analyst</div>
+        
+        <div class="contact-info">
+            <a href="mailto:Lital1243@gmail.com">📧 Lital1243@gmail.com</a> | 
+            <a href="http://linkedin.com/in/litalcohen1" target="_blank">💼 LinkedIn Profile</a>
+        </div>
+
         <p class="bio">
             Welcome to my data analytics portfolio! Here I showcase end-to-end projects, advanced Power BI dashboards, SQL/Python data models, and business insights designed to drive strategic decisions.
         </p>
 
-        <h2 style="font-size: 1.5rem; text-align: left; margin-top: 40px; border-bottom: 1px solid #334155; padding-bottom: 10px;">Featured Projects</h2>
+        <h2 style="font-size: 1.5rem; text-align: left; margin-top: 40px; border-bottom: 1px solid #334155; padding-bottom: 10px;">Featured Project</h2>
 
         <div class="projects-grid">
             <!-- Project 1: NETA -->
             <div class="project-card">
                 <div class="project-title">NETA - Executive Business Overview Dashboard</div>
                 <div class="project-desc">
-                    An executive Power BI dashboard analyzing revenue growth, customer acquisition (New vs Active), ARPU trends, churn rates, and regional/industry performance.
+                    An executive Power BI dashboard built for a software company (SW), analyzing $72M in revenue, MRR ($1.7M), ARPU, churn rates (11%), QoQ growth trends, and regional/industry performance.
                 </div>
                 <a href="https://github.com/lital1243-art/NETA-Executive-Business-Dashboard" target="_blank" class="btn">View Project</a>
-            </div>
-
-            <!-- Project 2: Superstore E2E -->
-            <div class="project-card">
-                <div class="project-title">Global Superstore End-to-End Analytics</div>
-                <div class="project-desc">
-                    A comprehensive data pipeline featuring data cleaning & EDA in Python (Pandas) combined with an interactive Power BI dashboard for retail performance.
-                </div>
-                <!-- החליפי את הקישור למטה לקישור לפרויקט ה-Superstore שלך בגיטהאב -->
-                <a href="#" target="_blank" class="btn">View Project</a>
             </div>
         </div>
     </div>
