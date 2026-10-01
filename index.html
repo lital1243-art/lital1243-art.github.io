@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lital Cohen | Data Analyst Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 40px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: var(--text-color);
+        }
+        .title {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .bio {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            text-align: left;
+            margin-top: 30px;
+        }
+        .project-card {
+            background-color: #0f172a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lital Cohen</h1>
+        <div class="title">Data Analyst</div>
+        <p class="bio">
+            Welcome to my data analytics portfolio! Here I showcase end-to-end projects, advanced Power BI dashboards, SQL/Python data models, and business insights designed to drive strategic decisions.
+        </p>
+
+        <h2 style="font-size: 1.5rem; text-align: left; margin-top: 40px; border-bottom: 1px solid #334155; padding-bottom: 10px;">Featured Projects</h2>
+
+        <div class="projects-grid">
+            <!-- Project 1: NETA -->
+            <div class="project-card">
+                <div class="project-title">NETA - Executive Business Overview Dashboard</div>
+                <div class="project-desc">
+                    An executive Power BI dashboard analyzing revenue growth, customer acquisition (New vs Active), ARPU trends, churn rates, and regional/industry performance.
+                </div>
+                <a href="https://github.com/lital1243-art/NETA-Executive-Business-Dashboard" target="_blank" class="btn">View Project</a>
+            </div>
+
+            <!-- Project 2: Superstore E2E -->
+            <div class="project-card">
+                <div class="project-title">Global Superstore End-to-End Analytics</div>
+                <div class="project-desc">
+                    A comprehensive data pipeline featuring data cleaning & EDA in Python (Pandas) combined with an interactive Power BI dashboard for retail performance.
+                </div>
+                <!-- החליפי את הקישור למטה לקישור לפרויקט ה-Superstore שלך בגיטהאב -->
+                <a href="#" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
