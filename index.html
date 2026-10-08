@@ -93,6 +93,20 @@
             font-size: 0.9rem;
             margin-bottom: 15px;
         }
+        .tech-stack {
+            margin-bottom: 15px;
+        }
+        .tech-stack span {
+            display: inline-block;
+            background-color: #1e293b;
+            color: var(--accent-color);
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 6px;
+            margin-bottom: 4px;
+            border: 1px solid #334155;
+        }
         .btn {
             display: inline-block;
             padding: 8px 16px;
@@ -124,14 +138,35 @@
             Welcome to my data analytics portfolio! Here I showcase end-to-end projects, advanced Power BI dashboards, SQL/Python data models, and business insights designed to drive strategic decisions.
         </p>
 
-        <h2 style="font-size: 1.5rem; text-align: left; margin-top: 40px; border-bottom: 1px solid #334155; padding-bottom: 10px;">Featured Project</h2>
+        <h2 style="font-size: 1.5rem; text-align: left; margin-top: 40px; border-bottom: 1px solid #334155; padding-bottom: 10px;">Featured Projects</h2>
 
         <div class="projects-grid">
-            <!-- Project 1: NETA -->
+            <!-- Project 1: Databricks Sales Intelligence Agent & Gold Layer -->
+            <div class="project-card">
+                <div class="project-title">Enterprise Sales Intelligence Agent & Genie AI</div>
+                <div class="project-desc">
+                    End-to-end Databricks project featuring a modular Gold Layer (Fact & Dimension Tables) in Unity Catalog, advanced metadata governance (Table & Column Comments), and a managed Genie AI Agent for natural language Text-to-SQL querying over time-series data.
+                </div>
+                <div class="tech-stack">
+                    <span>Databricks</span>
+                    <span>Unity Catalog</span>
+                    <span>Spark SQL</span>
+                    <span>Genie AI Agent</span>
+                    <span>Time-Series Analytics</span>
+                </div>
+                <a href="https://github.com/lital1243-art/databricks-sales-agent" target="_blank" class="btn">View Project</a>
+            </div>
+
+            <!-- Project 2: NETA -->
             <div class="project-card">
                 <div class="project-title">NETA - Executive Business Overview Dashboard</div>
                 <div class="project-desc">
                     An executive Power BI dashboard built for a software company (SW), analyzing $72M in revenue, MRR ($1.7M), ARPU, churn rates (11%), QoQ growth trends, and regional/industry performance.
+                </div>
+                <div class="tech-stack">
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Business Intelligence</span>
                 </div>
                 <a href="https://github.com/lital1243-art/NETA-Executive-Business-Dashboard" target="_blank" class="btn">View Project</a>
             </div>
